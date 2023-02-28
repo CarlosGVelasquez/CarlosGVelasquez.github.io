@@ -1,5 +1,4 @@
-# Proyecto CV: CarlosGVelasquez.github.io
-
+# Proyecto CV: https://carlosgvelasquez.github.io/
 
 Quiero acalrar un par de cosas
 >* Los bordes negros entre secciones, se ven un poco feos, se como sacarlos, pero sentia que se veia peor y me quede con lo que mejor se veia
