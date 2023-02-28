@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="*ngIf="expression;else templateName"">
+<html lang="*ngIf=" expression;else templateName"">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,48 +10,139 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="https://kit.fontawesome.com/98682a3ba9.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/98682a3ba9.js" crossorigin="anonymous"></script>
+    <script src="js/comportamiento.js"></script>
 </head>
 
 
-<body>
-    <header >
-        <h1>Curriculum vitae</h1>
+<body onload="calcularEdad()">
+    
+    <header>
+        <h1>Proyecto - Curriculum vitae</h1>
     </header>
 
-    <!--. Objetivo, que te desplaze a donde esta la info ..--> 
-    <nav>  
-        <a class="active" href="#home">Inicio</a>
-        <a href="#news">Info</a>
-        <a href="#contact">Experiencia</a>
-        <a href="#about">Estudios</a>
+    <nav id="navbar">
+        <a class="active" href="#top">Inicio</a>
+        <a href="#profile">Perfil</a>
+        <a href="#exp">Tecnologias</a>
+        <a href="#contact">Redes Sociales</a>
+
     </nav>
 
-    <h2 id="name"> Carlos Velasquez </h2>
+    <div id="profile" class="bg-image bg1">
 
 
-    <article> 
-        <i class="icon fa-solid fa-coffee fa-2xl"></i>
-        <p id="email"> velasquezcgm@gmail.com </p>
-    </article>
 
-    <article> 
-        <p id="birthday"> 9/8/1996 </p>
-    </article>
+        <div class="fondoB">
+            <div class="center">
+                <img src="avatar.jpg" alt="Avatar" class="avatar">
+                <p id="name"> Carlos Velasquez </p>
+            </div>
 
-    <article> 
-        <p id="adress"> 3670 Pecan Acres Ln </p>
-    </article>
 
-    <article> 
-        <i class="icon fa-solid fa-phone fa-2xl"></i>
-        <p id="phone"> (+54 9 11) 5782-3921 </p>
-    </article>
+            <div class="w3-row w3-center w3-small">
 
-    <article>
-        <p id="about"> </p>
-    </article>
 
-    <footer></footer>
+                <div class="w3-col l3 m6 s12">
+                    <i class="fa fa-birthday-cake fa-3x"></i>
+                    <p>
+                    <a id="birthday"> </a>
+                    Años
+                    </p>
+                </div>
+               
+
+                <div class="w3-col l3 m6 s12">
+                    <i class="fa fa-address-card fa-3x"></i>
+                    <p id="adress"> 3670 Pecan Acres Ln </p>
+                </div>
+
+                <div class="w3-col l3 m6 s12 colorborde">
+                    <i class="icon fa-solid fa-phone fa-3x"></i>
+                    <p id="phone"> (+54 911)5782-3921 </p>
+                </div>
+
+                <div class="w3-col l3 m6 s12 colorborde">
+
+                    <a href="mailto:velasquezcgm@gmail.com">
+                        <i class="fa fa-envelope fa-3x"></i>
+                    </a>
+                    <p id="email"> velasquezcgm@gmail.com </p>
+                </div>
+
+
+            </div>
+
+            <div class=" parrafoLargo">
+                Aca hablaria sobre mi y esperiencias importantes en el trabajo, pero a falta de estas y mi incapacidad para que suenen interesantes
+                simplemente rellenare. Lorem ipsum dolor sit amet. Ad nulla doloribus sit aperiam velit aut 
+                repellendus nisi qui quasi consequatur aut aspernatur aliquam. Est voluptas quia ea maiores 
+                aspernatur aut minima exercitationem. Non galisum similique sit galisum facilis qui magnam 
+                voluptatem sit  
+            </div>
+
+        </div>
+    </div>
+
+    <div id="exp" class="bg-image bg2">
+        <div class="fondoB">
+            <h2>Algunas tecnologias que conozco</h2>
+
+            <div class="w3-row w3-center w3-small">
+                <div class="w3-col l4 m6 s12">
+                    <i class="fa-brands fa-java fa-3x alto"></i>
+                    <p id="email"> Java </p>
+                </div>
+                <div class="w3-col l4 m6 s12">
+                    <i class="fa-brands fa-css3 fa-3x medio"></i>
+                    <p id="email"> CSS </p>
+                </div>
+                <div class="w3-col l4 m6 s12">
+                    <i class="fa fa-solid fa-html5 fa-3x medio"></i>
+                    <p id="email"> HTML </p>
+                </div>
+                <div class="w3-col l4 m6 s12">
+                    <i class="fa fa-solid fa-gem fa-3x medio"></i>
+                    <p id="email"> Ruby </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+   
+
+    <footer>
+        <div id="contact" class="bg-image bg3">
+
+            <div class="fondoB">
+                <div class="w3-content w3-row w3-center w3-small">
+    
+    
+    
+                    
+    
+    
+                    <div class="w3-col l6 m6 s12  ">
+                        <a class="button" href="https://www.linkedin.com/in/carlos-velasquez-menchaca/">
+                            <i class="fa fa-linkedin-square fa-3x"></i>
+                        </a>
+                    </div>
+    
+                    <div class="w3-col l6 m6 s12 ">
+                        <a class="button" href="https://github.com/CarlosGVelasquez">
+                            <i class="fab fa-solid fa-github fa-3x"></i>
+                        </a>
+                    </div>
+    
+    
+    
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
